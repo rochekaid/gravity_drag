@@ -1,0 +1,83 @@
+ #gf_drag_search{
+     display: flex;
+ } 
+  #gf_drag_search input{
+     padding: 10px 15px;
+     border:1px #999 solid;
+     border-radius:5px;
+ }
+ #gf_drag_search h3 {
+    text-align:center;
+    padding:20px;
+}
+#gf_drag_search .revert {
+    display:inline!important;
+    background:none;
+    border:0px!important;
+    color:red;
+}
+.ui-sortable-handle{
+    background:#fff;
+}
+
+.group_container{ 
+    width:100%;
+    background-color: #ffffff;
+    padding: 20px;
+ 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Adjust for spacing between tables */
+}
+
+#gf_drag_search .table_container {
+    flex: 0 0 calc(25% - 20px); /* Four tables in a row with 20px spacing between */
+    margin: 10px; /* Adjust for spacing between tables */
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius:5px
+}
+
+#drag_search_container{
+    flex: 0 0 auto;
+    width: 20%;
+    min-width: fit-content; /* Adjust as needed */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+#gf_drag_search #drag_search{
+    margin-bottom:20px;
+}
+#gf_drag_search #t_sortable_fixed_head .header{
+    display: table!important;
+    width: 100%!important;
+    border-bottom:1px solid #999;
+}
+
+#gf_drag_search .middle{
+   display:inline-block; 
+} 
+#gf_drag_search .middle form{
+    display:inline-block; 
+} 
+ 
+#gf_drag_search .searchy{
+    margin-bottom:20px;
+    width:33%;
+}              
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    #drag_search_container {
+        width: 100%;
+        min-width: auto;
+    }
+    #gf_drag_search .table_container {
+        flex: 0 0 calc(50% - 20px); /* Two tables in a row with spacing */
+    }
+}
